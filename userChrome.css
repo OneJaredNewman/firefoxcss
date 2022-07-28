@@ -9,12 +9,14 @@
   margin-right: 140px;
   box-shadow: none !important;
 }
+
 [uidensity="compact"]:root .titlebar-button {
   height: 32px !important;
 }
 [uidensity="compact"]:root #nav-bar {
   margin-top: -32px;
 }
+
 #titlebar-spacer {
   background-color: var(--chrome-secondary-background-color);
 }
@@ -25,11 +27,11 @@
   background-color: var(--toolbar-bgcolor);
 }
 
-#main-window[inFullscreen="true"] #sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"],
-#main-window[inFullscreen="true"] #sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] + splitter {
+#main-window[inFullscreen="true"] #sidebar-box,
+#main-window[inFullscreen="true"] #sidebar-box + splitter {
     visibility: collapse;
 }
 
-#sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] #sidebar-header {
-  visibility: collapse;
+#sidebar-box #sidebar-header {
+  display: none !important;
 }
